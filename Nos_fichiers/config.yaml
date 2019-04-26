@@ -1,0 +1,8 @@
+KeyUp : z
+KeyDown : s
+KeyLeft : a
+KeyRight : d
+KeyQuit : q
+GridSize : 10    
+LineColor : KBlue
+RowColor :  KGreen
