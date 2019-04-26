@@ -1,0 +1,103 @@
+\hypertarget{type_8h}{\section{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/type.h File Reference}
+\label{type_8h}\index{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/type.\+h@{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/type.\+h}}
+}
+
+
+Definition of usefull types or aliases for the project.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+Include dependency graph for type.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{type_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_my_param}{C\+My\+Param}
+\begin{DoxyCompactList}\small\item\em Struct containing all the game's parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_authorized_key}{Authorized\+Key}
+\begin{DoxyCompactList}\small\item\em Struct containing all the authorized keys in the struct \hyperlink{struct_c_my_param}{C\+My\+Param}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{type_8h_a8d0101883e9c8ccfcef43c9d6fa3cc49}{typedef std\+::vector$<$ unsigned $>$ \hyperlink{type_8h_a8d0101883e9c8ccfcef43c9d6fa3cc49}{C\+V\+Line}}\label{type_8h_a8d0101883e9c8ccfcef43c9d6fa3cc49}
+
+\begin{DoxyCompactList}\small\item\em C\+V\+Line \+: alias to a line of the matrix. \end{DoxyCompactList}\item 
+\hypertarget{type_8h_a64a592133575ccebb1b36453acbec02b}{typedef std\+::vector$<$ \hyperlink{type_8h_a8d0101883e9c8ccfcef43c9d6fa3cc49}{C\+V\+Line} $>$ \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat}}\label{type_8h_a64a592133575ccebb1b36453acbec02b}
+
+\begin{DoxyCompactList}\small\item\em C\+Mat \+: alias to a game grid type. \end{DoxyCompactList}\item 
+\hypertarget{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{typedef std\+::pair$<$ unsigned, \\*
+unsigned $>$ \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position}}\label{type_8h_a7035b1162647d49def2c24ac2c2e30c1}
+
+\begin{DoxyCompactList}\small\item\em C\+Position \+: a pair gathering the coordinates in the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{type_8h_aeb6b858f886b8520a7f220b3de0bef1a}{const \hyperlink{struct_authorized_key}{Authorized\+Key} \hyperlink{type_8h_aeb6b858f886b8520a7f220b3de0bef1a}{K\+Authorized\+Key}}\label{type_8h_aeb6b858f886b8520a7f220b3de0bef1a}
+
+\begin{DoxyCompactList}\small\item\em K\+Authorized\+Key. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, \\*
+std\+::string $>$ \hyperlink{type_8h_ac2178f299fb60a3a19c00006603770ec}{K\+Color}
+\begin{DoxyCompactList}\small\item\em K\+Color \+: map between the \char`\"{}human\char`\"{} color and its correspondence for the Unix terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition of usefull types or aliases for the project. 
+
+\begin{DoxyAuthor}{Author}
+Alain Casali 
+
+Marc Laporte 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 Janvier 2018 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{type_8h_source}{type.\+h}.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{type_8h_ac2178f299fb60a3a19c00006603770ec}{\index{type.\+h@{type.\+h}!K\+Color@{K\+Color}}
+\index{K\+Color@{K\+Color}!type.\+h@{type.\+h}}
+\subsubsection[{K\+Color}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$std\+::string, std\+::string$>$ K\+Color}}\label{type_8h_ac2178f299fb60a3a19c00006603770ec}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+  \{\textcolor{stringliteral}{"KReset"}, \textcolor{stringliteral}{"0"}\},
+  \{\textcolor{stringliteral}{"KBlack"}, \textcolor{stringliteral}{"30"}\},
+  \{\textcolor{stringliteral}{"KRed"}, \textcolor{stringliteral}{"31"}\},
+  \{\textcolor{stringliteral}{"KGreen"}, \textcolor{stringliteral}{"32"}\},
+  \{\textcolor{stringliteral}{"KYellow"}, \textcolor{stringliteral}{"33"}\},
+  \{\textcolor{stringliteral}{"KBlue"}, \textcolor{stringliteral}{"34"}\},
+  \{\textcolor{stringliteral}{"KMAgenta"}, \textcolor{stringliteral}{"35"}\},
+  \{\textcolor{stringliteral}{"KCyan"}, \textcolor{stringliteral}{"36"}\},
+
+\}
+\end{DoxyCode}
+
+
+K\+Color \+: map between the \char`\"{}human\char`\"{} color and its correspondence for the Unix terminal. 
+
+
+
+Definition at line 66 of file type.\+h.
+

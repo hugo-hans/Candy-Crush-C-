@@ -1,0 +1,121 @@
+\hypertarget{colors_8h}{\section{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/colors.h File Reference}
+\label{colors_8h}\index{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/colors.\+h@{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/colors.\+h}}
+}
+
+
+Set of usefull functions for the grid management.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}Correc\+\_\+prof/type.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Correc\+\_\+prof/nsutil.\+h\char`\"{}}\\*
+Include dependency graph for colors.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{colors_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{colors_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{colors_8h_a6a3ca153f0817e8ba91a023b886bb662}{void \hyperlink{colors_8h_a6a3ca153f0817e8ba91a023b886bb662}{Clear\+Screen} ()}\label{colors_8h_a6a3ca153f0817e8ba91a023b886bb662}
+
+\begin{DoxyCompactList}\small\item\em Clear the current terminal. \end{DoxyCompactList}\item 
+\hypertarget{colors_8h_a7f0df05a97c053bfa8a3e5863b0a0e80}{void {\bfseries Color} (const std\+::string \&Col)}\label{colors_8h_a7f0df05a97c053bfa8a3e5863b0a0e80}
+
+\item 
+\hypertarget{colors_8h_a03941f193f1108f178e73d0259855c07}{void {\bfseries Display\+Selection} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{struct_c_my_param}{C\+My\+Param} \&Params, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos)}\label{colors_8h_a03941f193f1108f178e73d0259855c07}
+
+\item 
+void \hyperlink{colors_8h_a5d74c4e071aab5b976217ab7d0fa68dc}{Display\+Grid\+With\+Line\+And\+Column\+Numbers} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat)
+\begin{DoxyCompactList}\small\item\em Display the grid showing the line and the column numbers. \end{DoxyCompactList}\item 
+\hypertarget{colors_8h_a63acb9190e494a45188d2911645e0657}{void {\bfseries Display\+Grid} (const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{struct_c_my_param}{C\+My\+Param} \&Param, const unsigned int \&Score, bool Show\+Line\+Number=true, bool Show\+Color=true)}\label{colors_8h_a63acb9190e494a45188d2911645e0657}
+
+\item 
+void \hyperlink{colors_8h_a5769001c1ac168805080650b28d297f8}{Init\+Grid} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Grid, const unsigned \&Size)
+\begin{DoxyCompactList}\small\item\em Initialize the grid according to the size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Set of usefull functions for the grid management. 
+
+\begin{DoxyAuthor}{Author}
+Alain Casali 
+
+Marc Laporte 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 Janvier 2018 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{colors_8h_source}{colors.\+h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{colors_8h_a5d74c4e071aab5b976217ab7d0fa68dc}{\index{colors.\+h@{colors.\+h}!Display\+Grid\+With\+Line\+And\+Column\+Numbers@{Display\+Grid\+With\+Line\+And\+Column\+Numbers}}
+\index{Display\+Grid\+With\+Line\+And\+Column\+Numbers@{Display\+Grid\+With\+Line\+And\+Column\+Numbers}!colors.\+h@{colors.\+h}}
+\subsubsection[{Display\+Grid\+With\+Line\+And\+Column\+Numbers}]{\setlength{\rightskip}{0pt plus 5cm}void Display\+Grid\+With\+Line\+And\+Column\+Numbers (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Mat} \&}]{Mat}
+\end{DoxyParamCaption}
+)}}\label{colors_8h_a5d74c4e071aab5b976217ab7d0fa68dc}
+
+
+Display the grid showing the line and the column numbers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Mat} & \+: Game grid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]Do not use this function, it's just for debugging\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Mat} & \+: Game grid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]Do not use this function, it's just for debugging\end{DoxyRefDesc}
+
+
+Definition at line 101 of file colors.\+cpp.
+
+\hypertarget{colors_8h_a5769001c1ac168805080650b28d297f8}{\index{colors.\+h@{colors.\+h}!Init\+Grid@{Init\+Grid}}
+\index{Init\+Grid@{Init\+Grid}!colors.\+h@{colors.\+h}}
+\subsubsection[{Init\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}void Init\+Grid (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mat} \&}]{Grid, }
+\item[{const unsigned \&}]{Size}
+\end{DoxyParamCaption}
+)}}\label{colors_8h_a5769001c1ac168805080650b28d297f8}
+
+
+Initialize the grid according to the size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em Grid} & Game grid to be initalized \\
+\hline
+\mbox{\tt in}  & {\em Size} & \+: Number of rows / columns of the grid (supposed to be squared) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file colors.\+cpp.
+

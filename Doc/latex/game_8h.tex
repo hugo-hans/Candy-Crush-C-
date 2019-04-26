@@ -1,0 +1,288 @@
+\hypertarget{game_8h}{\section{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/game.h File Reference}
+\label{game_8h}\index{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/game.\+h@{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Correc\+\_\+prof/game.\+h}}
+}
+
+
+Set of usefull functions for the game.  
+
+
+{\ttfamily \#include \char`\"{}Correc\+\_\+prof/type.\+h\char`\"{}}\\*
+Include dependency graph for game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{game_8h_aa2310e9ab250ce7576dd0e378ca0dd35}{Menu} (\hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, char \&Direction, const \hyperlink{struct_c_my_param}{C\+My\+Param} \&Params)
+\begin{DoxyCompactList}\small\item\em Display the menu according to the set of parameters. \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_a38d8b6abecddf010d19255f48631a245}{Make\+A\+Move} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Grid, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const char \&Direction, const \hyperlink{struct_c_my_param}{C\+My\+Param} \&Params)
+\begin{DoxyCompactList}\small\item\em Swap the token from its inital place to its final destination. \end{DoxyCompactList}\item 
+bool \hyperlink{game_8h_ac41d8a7dab5763ab0748746e4f1a4180}{At\+Least\+Three\+In\+A\+Row} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Chek if there is at least 3 token in the same row. \end{DoxyCompactList}\item 
+bool \hyperlink{game_8h_af44f38ae028fa0a37a40badb0c413518}{At\+Least\+Three\+In\+A\+Column} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Chek if there is at least 3 token in the same column. \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}{Removal\+In\+Column} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{game_8h_aec867a38d77cd9fb6fe3126d74821ad9}{Removal\+In\+Row} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. \end{DoxyCompactList}\item 
+unsigned \hyperlink{game_8h_a3af37b4dab3f8f95f0af88873c70492b}{Compute\+Score} (const unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Computer the score. \end{DoxyCompactList}\item 
+int \hyperlink{game_8h_a0b1d64ee76933ef8f007f1208cb869a7}{ppal} ()
+\begin{DoxyCompactList}\small\item\em new main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Set of usefull functions for the game. 
+
+\begin{DoxyAuthor}{Author}
+Alain Casali 
+
+Marc Laporte 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 Janvier 2018 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{game_8h_source}{game.\+h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{game_8h_af44f38ae028fa0a37a40badb0c413518}{\index{game.\+h@{game.\+h}!At\+Least\+Three\+In\+A\+Column@{At\+Least\+Three\+In\+A\+Column}}
+\index{At\+Least\+Three\+In\+A\+Column@{At\+Least\+Three\+In\+A\+Column}!game.\+h@{game.\+h}}
+\subsubsection[{At\+Least\+Three\+In\+A\+Column}]{\setlength{\rightskip}{0pt plus 5cm}bool At\+Least\+Three\+In\+A\+Column (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Mat} \&}]{Mat, }
+\item[{{\bf C\+Position} \&}]{Pos, }
+\item[{unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{game_8h_af44f38ae028fa0a37a40badb0c413518}
+
+
+Chek if there is at least 3 token in the same column. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Mat} & \+: Game grid \\
+\hline
+\mbox{\tt out}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same column \\
+\hline
+\mbox{\tt out}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is at least 3 times the same token in the same column, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Mat} & \+: Game grid \\
+\hline
+\mbox{\tt out}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same column \\
+\hline
+\mbox{\tt out}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this column \\
+\hline
+\mbox{\tt out}  & {\em What\+Number} & \+: size of the number's sequence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is at least 3 times the same token in the same column, false otherwise 
+\end{DoxyReturn}
+\hypertarget{game_8h_ac41d8a7dab5763ab0748746e4f1a4180}{\index{game.\+h@{game.\+h}!At\+Least\+Three\+In\+A\+Row@{At\+Least\+Three\+In\+A\+Row}}
+\index{At\+Least\+Three\+In\+A\+Row@{At\+Least\+Three\+In\+A\+Row}!game.\+h@{game.\+h}}
+\subsubsection[{At\+Least\+Three\+In\+A\+Row}]{\setlength{\rightskip}{0pt plus 5cm}bool At\+Least\+Three\+In\+A\+Row (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Mat} \&}]{Mat, }
+\item[{{\bf C\+Position} \&}]{Pos, }
+\item[{unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{game_8h_ac41d8a7dab5763ab0748746e4f1a4180}
+
+
+Chek if there is at least 3 token in the same row. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Mat} & \+: Game grid \\
+\hline
+\mbox{\tt out}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same row \\
+\hline
+\mbox{\tt out}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this row \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is at least 3 times the same token in the same row, false otherwise 
+\end{DoxyReturn}
+\hypertarget{game_8h_a3af37b4dab3f8f95f0af88873c70492b}{\index{game.\+h@{game.\+h}!Compute\+Score@{Compute\+Score}}
+\index{Compute\+Score@{Compute\+Score}!game.\+h@{game.\+h}}
+\subsubsection[{Compute\+Score}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Compute\+Score (
+\begin{DoxyParamCaption}
+\item[{const unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a3af37b4dab3f8f95f0af88873c70492b}
+
+
+Computer the score. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em How\+Many} & \+: Number of candidies removed \\
+\hline
+\end{DoxyParams}
+\hypertarget{game_8h_a38d8b6abecddf010d19255f48631a245}{\index{game.\+h@{game.\+h}!Make\+A\+Move@{Make\+A\+Move}}
+\index{Make\+A\+Move@{Make\+A\+Move}!game.\+h@{game.\+h}}
+\subsubsection[{Make\+A\+Move}]{\setlength{\rightskip}{0pt plus 5cm}void Make\+A\+Move (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mat} \&}]{Grid, }
+\item[{const {\bf C\+Position} \&}]{Pos, }
+\item[{const char \&}]{Direction, }
+\item[{const {\bf C\+My\+Param} \&}]{Params}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a38d8b6abecddf010d19255f48631a245}
+
+
+Swap the token from its inital place to its final destination. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em in$\vert$out\mbox{]}} & Grid \+: Game grid \\
+\hline
+\mbox{\tt in}  & {\em Pos} & \+: Position of the token to move \\
+\hline
+\mbox{\tt in}  & {\em Direction} & \+: \+: Direction of wanted movement \\
+\hline
+\mbox{\tt in}  & {\em Params} & \+: List of usefull parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]No control is provided as to the validity of the move \end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em in$\vert$out\mbox{]}} & Grid \+: Game grid \\
+\hline
+\mbox{\tt in}  & {\em Pos} & \+: Position of the token to move \\
+\hline
+\mbox{\tt in}  & {\em Direction} & \+: \+: Direction of wanted movement \\
+\hline
+\mbox{\tt in}  & {\em Params} & \+: List of usefull parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]No control is provided as to the validity of the move \end{DoxyRefDesc}
+
+
+Definition at line 74 of file jeu.\+cpp.
+
+\hypertarget{game_8h_aa2310e9ab250ce7576dd0e378ca0dd35}{\index{game.\+h@{game.\+h}!Menu@{Menu}}
+\index{Menu@{Menu}!game.\+h@{game.\+h}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Position} \&}]{Pos, }
+\item[{char \&}]{Direction, }
+\item[{const {\bf C\+My\+Param} \&}]{Params}
+\end{DoxyParamCaption}
+)}}\label{game_8h_aa2310e9ab250ce7576dd0e378ca0dd35}
+
+
+Display the menu according to the set of parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em Pos} & \+: Position of the token to move \\
+\hline
+\mbox{\tt out}  & {\em Direction} & \+: Direction of wanted movement \\
+\hline
+\mbox{\tt in}  & {\em Params} & \+: List of usefull parameters\\
+\hline
+\mbox{\tt out}  & {\em Pos} & \+: Position of the token to move \\
+\hline
+\mbox{\tt out}  & {\em Direction} & \+: Direction of wanted movement \\
+\hline
+\mbox{\tt in}  & {\em Params} & \+: List of usefull parameters \\
+\hline
+\mbox{\tt in}  & {\em Score} & \+: Player's score \\
+\hline
+\end{DoxyParams}
+\hypertarget{game_8h_a0b1d64ee76933ef8f007f1208cb869a7}{\index{game.\+h@{game.\+h}!ppal@{ppal}}
+\index{ppal@{ppal}!game.\+h@{game.\+h}}
+\subsubsection[{ppal}]{\setlength{\rightskip}{0pt plus 5cm}int ppal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a0b1d64ee76933ef8f007f1208cb869a7}
+
+
+new main 
+
+\begin{DoxyReturn}{Returns}
+0 if everything is O\+K 
+\end{DoxyReturn}
+
+
+Definition at line 191 of file jeu.\+cpp.
+
+\hypertarget{game_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}{\index{game.\+h@{game.\+h}!Removal\+In\+Column@{Removal\+In\+Column}}
+\index{Removal\+In\+Column@{Removal\+In\+Column}!game.\+h@{game.\+h}}
+\subsubsection[{Removal\+In\+Column}]{\setlength{\rightskip}{0pt plus 5cm}void Removal\+In\+Column (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mat} \&}]{Mat, }
+\item[{const {\bf C\+Position} \&}]{Pos, }
+\item[{const unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{game_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}
+
+
+Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em in$\vert$out\mbox{]}} & Mat \+: Game grid \\
+\hline
+\mbox{\tt in}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same column \\
+\hline
+\mbox{\tt in}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this column \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file jeu.\+cpp.
+
+\hypertarget{game_8h_aec867a38d77cd9fb6fe3126d74821ad9}{\index{game.\+h@{game.\+h}!Removal\+In\+Row@{Removal\+In\+Row}}
+\index{Removal\+In\+Row@{Removal\+In\+Row}!game.\+h@{game.\+h}}
+\subsubsection[{Removal\+In\+Row}]{\setlength{\rightskip}{0pt plus 5cm}void Removal\+In\+Row (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mat} \&}]{Mat, }
+\item[{const {\bf C\+Position} \&}]{Pos, }
+\item[{const unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{game_8h_aec867a38d77cd9fb6fe3126d74821ad9}
+
+
+Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em in$\vert$out\mbox{]}} & Mat \+: Game grid \\
+\hline
+\mbox{\tt in}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same row \\
+\hline
+\mbox{\tt in}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this row \\
+\hline
+\end{DoxyParams}

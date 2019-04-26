@@ -1,0 +1,105 @@
+\hypertarget{gamej_8h}{\section{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/gamej.h File Reference}
+\label{gamej_8h}\index{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/gamej.\+h@{/media/g17018233/\+Lexar/c++/\+G2\+\_\+\+Hans\+\_\+\+Fabre\+\_\+\+Gaudel\+\_\+\+Girard/\+M1103-\/\+Projet\+Number\+Crush/\+Nos\+\_\+fichiers/gamej.\+h}}
+}
+
+
+Set of usefull functions for the game.  
+
+
+{\ttfamily \#include \char`\"{}Correc\+\_\+prof/type.\+h\char`\"{}}\\*
+Include dependency graph for gamej.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{gamej_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{gamej_8h_ad1e1ea100ff2b9d6c4b917035a0a28c7}{bool {\bfseries At\+Least\+Three\+In\+A\+Row} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, unsigned \&How\+Many, unsigned \&What\+Number)}\label{gamej_8h_ad1e1ea100ff2b9d6c4b917035a0a28c7}
+
+\item 
+\hypertarget{gamej_8h_a0d5776853cfa50c2b47e84f0be4fd4f3}{bool {\bfseries At\+Least\+Three\+In\+A\+Column} (const \hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, unsigned \&How\+Many, unsigned \&What\+Number)}\label{gamej_8h_a0d5776853cfa50c2b47e84f0be4fd4f3}
+
+\item 
+void \hyperlink{gamej_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}{Removal\+In\+Column} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const unsigned \&How\+Many)
+\begin{DoxyCompactList}\small\item\em Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. \end{DoxyCompactList}\item 
+\hypertarget{gamej_8h_aec867a38d77cd9fb6fe3126d74821ad9}{void {\bfseries Removal\+In\+Row} (\hyperlink{type_8h_a64a592133575ccebb1b36453acbec02b}{C\+Mat} \&Mat, const \hyperlink{type_8h_a7035b1162647d49def2c24ac2c2e30c1}{C\+Position} \&Pos, const unsigned \&How\+Many)}\label{gamej_8h_aec867a38d77cd9fb6fe3126d74821ad9}
+
+\item 
+\hypertarget{gamej_8h_a261bc341da14bc7ed3de2ec60f25a55d}{unsigned {\bfseries Compute\+Score} (const unsigned \&How\+Many, unsigned \&What\+Number)}\label{gamej_8h_a261bc341da14bc7ed3de2ec60f25a55d}
+
+\item 
+int \hyperlink{gamej_8h_a0b1d64ee76933ef8f007f1208cb869a7}{ppal} ()
+\begin{DoxyCompactList}\small\item\em new main \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Set of usefull functions for the game. 
+
+\begin{DoxyAuthor}{Author}
+Alain Casali 
+
+Marc Laporte 
+
+Joan Fabre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26 Janvier 2018 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{gamej_8h_source}{gamej.\+h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gamej_8h_a0b1d64ee76933ef8f007f1208cb869a7}{\index{gamej.\+h@{gamej.\+h}!ppal@{ppal}}
+\index{ppal@{ppal}!gamej.\+h@{gamej.\+h}}
+\subsubsection[{ppal}]{\setlength{\rightskip}{0pt plus 5cm}int ppal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{gamej_8h_a0b1d64ee76933ef8f007f1208cb869a7}
+
+
+new main 
+
+\begin{DoxyReturn}{Returns}
+0 if everything is O\+K 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file gamej.\+cpp.
+
+\hypertarget{gamej_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}{\index{gamej.\+h@{gamej.\+h}!Removal\+In\+Column@{Removal\+In\+Column}}
+\index{Removal\+In\+Column@{Removal\+In\+Column}!gamej.\+h@{gamej.\+h}}
+\subsubsection[{Removal\+In\+Column}]{\setlength{\rightskip}{0pt plus 5cm}void Removal\+In\+Column (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Mat} \&}]{Mat, }
+\item[{const {\bf C\+Position} \&}]{Pos, }
+\item[{const unsigned \&}]{How\+Many}
+\end{DoxyParamCaption}
+)}}\label{gamej_8h_ad2272cb3477a9e2cbb6cf05c094b43a7}
+
+
+Remove \char`\"{}\+Howmany\char`\"{} same tokens starting from \char`\"{}\+Pos\char`\"{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em in$\vert$out\mbox{]}} & Mat \+: Game grid \\
+\hline
+\mbox{\tt in}  & {\em Pos} & \+: Position of the first token from wich there is at least 3 times the same token in the same column \\
+\hline
+\mbox{\tt in}  & {\em How\+Many} & \+: How many the same token appears consecutivelly in this column \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file jeu.\+cpp.
+
